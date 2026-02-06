@@ -2,7 +2,7 @@
 
 A dynamic web application that fetches and displays creature data from an external API. This project demonstrates mastery of **Asynchronous JavaScript**, **DOM Manipulation**, and **Responsive CSS**.
 
-🔗 **[Live Demo](https://junotfras.github.io/RPG-GAME/)**
+🔗 **[Live Demo](https://junotfras.github.io/rpg-game/)**
 
 ![Project Screenshot](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
 *(Note: Replace this link with a real screenshot after you deploy)*
