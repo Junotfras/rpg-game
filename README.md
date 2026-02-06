@@ -4,7 +4,7 @@ A dynamic web application that fetches and displays creature data from an extern
 
 🔗 **[Live Demo](https://junotfras.github.io/rpg-game/)**
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
+![Project Screenshot](./assets/screenshot.png)
 *(Note: Replace this link with a real screenshot after you deploy)*
 
 ## 🚀 Key Features
