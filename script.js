@@ -54,7 +54,8 @@ const setText = (el, value) => {
 };
 
 const getStatValue = (statsArr, statName) => {
-  const statObj = statsArr.find((s) => s.name === statName);
+  // FIX: Change 's.name' to 's.stat.name'
+  const statObj = statsArr.find((s) => s.stat.name === statName);
   return statObj ? statObj.base_stat : "";
 };
 
