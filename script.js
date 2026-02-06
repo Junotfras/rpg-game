@@ -9,6 +9,9 @@ const API_BASE = "https://rpg-creature-api.freecodecamp.rocks/api/creature/"; //
 // --- DOM ---
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
+const errorMsg = document.getElementById("error-msg"); 
+
+const creatureName = document.getElementById("creature-name");
 
 const creatureName = document.getElementById("creature-name");
 const creatureId = document.getElementById("creature-id");
@@ -90,6 +93,9 @@ const renderCreature = (data) => {
 };
 
 const searchCreature = async (query) => {
+  errorMsg.textContent = "";
+  errorMsg.className = "error-hidden";
+  
   try {
     // Normalize name searches to lowercase; IDs are fine too.
     const normalized = query.trim().toLowerCase();
@@ -104,8 +110,10 @@ const searchCreature = async (query) => {
     const data = await res.json();
     renderCreature(data);
   } catch (e) {
-    // FCC test expects this exact alert message
-    alert("Creature not found");
+    errorMsg.textContent = "Creature not found. Try 'Pikachu' or '1'.";
+    errorMsg.className = "error-visible";
+    
+    console.error(e);
   }
 };
 
